@@ -1,0 +1,25 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d 壱 弐 参 肆 伍 陸 漆 捌 玖 拾
+
+bspc config border_width         2
+bspc config window_gap          12
+bspc config top_padding		20
+bspc config left_padding	30
+bspc config right_padding	30
+bspc config top_monocle_padding -20
+bspc config left_monocle_padding -30
+bspc config right_monocle_padding -30
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config pointer_modifier mod4
+bspc config pointer_action3 resize_side
+#bspc config pointer_action3 resize_corner
+bspc config pointer_action1 move
+
+bspc rule -a plank layer=above manage=on border=off focus=off locked=on

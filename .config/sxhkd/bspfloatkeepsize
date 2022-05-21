@@ -1,0 +1,17 @@
+#!/bin/env bash
+# bspfloatkeepsize
+
+declare -A tiled_rects
+
+for id in "$@"; do
+    tiled_rects["$id"]="$(bspc query -T -n "$id" | jq -r '
+        .client.tiledRectangle | "\(.x) \(.y) \(.width) \(.height)"
+    ')"
+done
+
+for id in "$@"; do
+    <<< "${tiled_rects[$id]}" read -r x y w h
+    bspc node "$id" -t ~floating
+    xdo move   -x "$x" -y "$y" "$id"
+    xdo resize -w "$w" -h "$h" "$id"
+done
