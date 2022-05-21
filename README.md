@@ -21,9 +21,9 @@ Restart/Exit bspwm - Super + Shift + Q <br />
 Restart sxhkd - Super + Escape <br />
 <br />
 Switching Workspaces: <br />
-Workspace 1~5 - Super + 1~5 <br />
-Workspace 6~10 - Super + F1~F5 <br />
-Moving Window Between Workspaces - Super + Shift + 1~5/F1~F5<br/>
+Workspace 1-5 - Super + 1-5 <br />
+Workspace 6-10 - Super + F1-F5 <br />
+Moving Window Between Workspaces - Super + Shift + 1-5/F1-F5<br/>
 <br />
 Switching Layouts: <br />
 Default to Tiling Layout <br />
