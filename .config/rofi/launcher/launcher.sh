@@ -13,7 +13,7 @@
 # column	row				row_center			screen			row_dock		row_dropdown
 
 theme="launchpad"
-dir="$HOME/.config/rofi/launchers/misc"
+dir="$HOME/.config/rofi/launcher/misc"
 
 # comment these lines to disable random style
 #themes=($(ls -p --hide="launcher.sh" $dir))

@@ -4,11 +4,15 @@
 
 # terminal emulator
 super + shift + Return
-	xfce4-terminal
+	alacritty
 
 # program launcher
 super + p
-	$HOME/.config/rofi/launchers/misc/launcher.sh
+	$HOME/.config/rofi/launcher/launcher.sh
+
+# powermenu
+super + l
+	$HOME/.config/rofi/powermenu/powermenu.sh
 
 # launch thunar
 super + e
@@ -45,7 +49,7 @@ super + f
 #	$HOME/.config/sxhkd/float.sh
 
 # send the newest marked node to the newest preselected node
-#super + y
+#super + Return
 #	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
@@ -75,6 +79,10 @@ super + f
 # focus the node in the given direction
 #super + {_,shift + }{h,j,k,l}
 #	bspc node -{f,s} {west,south,north,east}
+
+# Move window by direction in same workspace
+super + {Left,Down,Up,Right}
+  bspc node --swap {west,south,north,east}
 
 # focus the node for the given path jump
 #super + {p,b,comma,period}
@@ -130,6 +138,9 @@ super + {_,shift + }F5
 # preselect the direction
 #super + ctrl + {h,j,k,l}
 #	bspc node -p {west,south,north,east}
+super + ctrl + {h, l}
+  bspc node -p {west, east}
+
 
 # preselect the ratio
 #super + ctrl + {1-9}
