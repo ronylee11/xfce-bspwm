@@ -1,12 +1,13 @@
 # What is this?
 
 My Xfce+bspwm Build using xfce + plank + bspwm + sxhkd + rofi + picom <br />
-aka. my "moderately" customized Xfce 
+aka. my "moderately" customized Xfce
 
 # Screenshot
 
 Picture of four xfce4-terminal instances separately running ncmpcpp, htop, wttr, cava
 ![Alt text](./showcase.png)
+![Alt text](./home.png)
 
 # Usage
 
@@ -28,7 +29,7 @@ Moving Window Between Workspaces - Super + Shift + 1-5/F1-F5<br/>
 Switching Layouts: <br />
 Default to Tiling Layout <br />
 Toggle Monocle Layout - Super + M <br />
-Toggle Floating Layout - Super + F <br /> 
+Toggle Floating Layout - Super + F <br />
 
 # Repositories
 
@@ -36,6 +37,7 @@ Toggle Floating Layout - Super + F <br />
 - Gitlab - https://gitlab.com/ronylee11/xfce-bspwm
 
 # Useful Resources
+
 - Inspiration from r/unixporn - https://www.reddit.com/r/unixporn/comments/kee3y9/xfce4bspwm_my_daily_set_up/
 - Basic xfce+bspwm+sxhkd setup - https://github.com/bgdawes/bspwm-xfce-dotfiles/wiki#deactivate-xfwm4
 - bspwm+sxhkd example - https://wiki.archlinux.org/title/bspwm
