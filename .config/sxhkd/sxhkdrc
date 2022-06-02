@@ -24,7 +24,7 @@ super + Escape
 
 # screenshot
 super + shift + s
-	scrot -s
+	scrot -s /home/cleff/Pictures/Screenshots/%d-%m-%Y-%T-screenshot.jpg
 
 #
 # bspwm hotkeys

@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+export CALIBRE_USE_DARK_PALETTE=1
+
 bind \t 'forward-char'
 bind \e\[C 'forward-single-char'
 
