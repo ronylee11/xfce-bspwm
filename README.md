@@ -7,6 +7,7 @@ aka. my "moderately" customized Xfce
 
 Picture of four xfce4-terminal instances separately running ncmpcpp, htop, wttr, cava
 ![Alt text](./.github/showcase.png)
+Picture of desktop
 ![Alt text](./.github/home.png)
 
 # Usage
