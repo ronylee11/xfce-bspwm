@@ -6,8 +6,8 @@ aka. my "moderately" customized Xfce
 # Screenshot
 
 Picture of four xfce4-terminal instances separately running ncmpcpp, htop, wttr, cava
-![Alt text](./showcase.png)
-![Alt text](./home.png)
+![Alt text](./.github/showcase.png)
+![Alt text](./.github/home.png)
 
 # Usage
 
