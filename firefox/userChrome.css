@@ -9,15 +9,13 @@
  * THANKS FOR USING MY USERCHROME! <3                                          *
  *============================================================================*/
 
-
 /* S E T T I N G S */
 
 :root {
-  --navbarWidth     : 500px; /* Set width of navbar. Use px for a fixed width 
+  --navbarWidth: 500px; /* Set width of navbar. Use px for a fixed width 
                                 or vw for a percentage of your window. */
-  --animationSpeed  : 0.15s;
+  --animationSpeed: 0.15s;
 }
-
 
 /* H I D I N G   E L E M E N T S */
 /* Comment or uncomment depending of what elements you want to hide */
@@ -26,19 +24,27 @@
 /* #back-button { display: none !important } */
 
 /* Hide back button only when disabled */
-#back-button[disabled="false"] { display: none !important }
+#back-button[disabled="false"] {
+  display: none !important;
+}
 
 /* Forward button */
 /* #forward-button { display: none !important } */
 
 /* Hide forward button only when disabled */
-#forward-button[disabled="false"] { display: none !important }
+#forward-button[disabled="false"] {
+  display: none !important;
+}
 
 /* "Shield" icon */
-#tracking-protection-icon-container { display: none !important }
+#tracking-protection-icon-container {
+  display: none !important;
+}
 
 /* Site information button */
-#identity-box { display: none !important }
+#identity-box {
+  display: none !important;
+}
 
 /* This is the "Search with" indicator on the urlbar */
 /* #urlbar-search-mode-indicator { display: none !important } */
@@ -66,11 +72,10 @@
 
 /*============================================================================*/
 
-
 /* Oneline tweak */
 
 #TabsToolbar {
-  margin-left : var(--navbarWidth) !important;
+  margin-left: var(--navbarWidth) !important;
 }
 
 #nav-bar {
@@ -78,24 +83,23 @@
 }
 
 #urlbar-container {
-  min-width   : 0px !important;
+  min-width: 0px !important;
 }
 
 :root[uidensity="compact"] #nav-bar {
-  margin-top  : -37px !important;
-  height      : 37px !important;
+  margin-top: -37px !important;
+  height: 37px !important;
 }
 
 :root:not([uidensity="compact"]):not([uidensity="touch"]) #nav-bar {
-  margin-top  : -44px !important;
-  height      : 44px !important;
+  margin-top: -44px !important;
+  height: 44px !important;
 }
 
 :root[uidensity="touch"] #nav-bar {
-  margin-top  : -49px !important;
-  height      : 49px !important;
+  margin-top: -49px !important;
+  height: 49px !important;
 }
-
 
 /* Dragging space */
 :root[sizemode="maximized"] #TabsToolbar {
@@ -106,46 +110,45 @@
   margin-top: 5px;
 }
 
-
 /* Simplifying interface */
 
 #nav-bar {
-  background  : none !important;
-  box-shadow  : none !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 #navigator-toolbox {
-  border      : none !important;
+  border: none !important;
 }
 
 .titlebar-spacer {
-  display     : none !important;
+  display: none !important;
 }
 
 #urlbar-background {
-  border      : none !important;
+  border: none !important;
 }
 
 #urlbar:not(:hover):not([breakout][breakout-extend]) > #urlbar-background {
-  box-shadow  : none !important;
-  background  : none !important;
+  box-shadow: none !important;
+  background: none !important;
 }
-
 
 /* Hide urlbar elements when not active */
 
-.urlbar-icon, #userContext-indicator, #userContext-label {
-  fill        : transparent !important;
-  background  : transparent !important;
-  color       : transparent !important;
+.urlbar-icon,
+#userContext-indicator,
+#userContext-label {
+  fill: transparent !important;
+  background: transparent !important;
+  color: transparent !important;
 }
 
 #urlbar:hover .urlbar-icon,
-#urlbar:active .urlbar-icon, 
+#urlbar:active .urlbar-icon,
 #urlbar[focused] .urlbar-icon {
-  fill        : var(--toolbar-color) !important;
+  fill: var(--toolbar-color) !important;
 }
-
 
 /* animations */
 .subviewbutton,
@@ -153,10 +156,10 @@
 .urlbar-icon,
 #userContext-indicator,
 #userContext-label,
-.urlbar-input-box, 
+.urlbar-input-box,
 #identity-box,
 #tracking-protection-icon-container,
-[anonid=urlbar-go-button],
+[anonid="urlbar-go-button"],
 .urlbar-icon-wrapper,
 #tracking-protection-icon,
 #identity-box image,
@@ -166,5 +169,10 @@ tab:not([beforeselected-visible])::after,
 tab[visuallyselected] .tab-background::before,
 tab[visuallyselected] .tab-background::before,
 .tab-close-button {
-  transition  : var(--animationSpeed) !important;
+  transition: var(--animationSpeed) !important;
+}
+
+/* disable firefox google meet popup */
+#webrtcIndicator {
+  display: none;
 }
