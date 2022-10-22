@@ -2,15 +2,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-export CALIBRE_USE_DARK_PALETTE=1
+bind \t forward-char
+bind \e\[C forward-single-char
 
-bind \t 'forward-char'
-bind \e\[C 'forward-single-char'
-
-if [ "$TERM_PROGRAM" = "vscode" ]
-	omf theme agnoster
+if [ "$TERM_PROGRAM" = vscode ]
+    omf theme agnoster
 else
-	omf theme fishbone
+    omf theme fishbone
 end
 
 # if DISPLAY is an empty string and the virtual terminal number is equal to one

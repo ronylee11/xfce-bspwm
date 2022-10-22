@@ -1,3 +1,3 @@
-function btc --wraps='bluetoothctl connect AC:12:2F:6E:ED:D2' --description 'alias btc=bluetoothctl connect AC:12:2F:6E:ED:D2'
-  bluetoothctl connect AC:12:2F:6E:ED:D2 $argv; 
+function btc --wraps='bluetoothctl connect' --description 'alias btc=bluetoothctl connect'
+  bluetoothctl connect $argv; 
 end
